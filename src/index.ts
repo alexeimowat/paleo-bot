@@ -1,7 +1,6 @@
 import { Client, Events, GatewayIntentBits, Message } from 'discord.js'
-import { birdDinosaurFactHandler } from './features/birdsAreNotDinosaurs'
 import type { KeywordHandler } from './types/Handler'
-import { dinosaurFactHandler } from './features/dinosaurFact'
+import { dinosaurFactHandler, birdDinosaurFactHandler } from './features/dinosaurFacts'
 
 const client = new Client({
     intents: [

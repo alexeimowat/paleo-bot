@@ -1,5 +1,5 @@
 import { Message } from 'discord.js'
-import type { KeywordHandler } from '../types/Handler'
+import type { KeywordHandler } from '../../types/Handler'
 
 const BIRDS_ARE_NOT_DINOSAURS = "Hey there!\n\nI noticed you mentioned birds in your message, I just wanted to take this opportunity to quickly correct a common misconception that birds *are* dinosaurs, which is wrong even if Paleontologist say so!\n Just think about it, birds don't *look* like dinosaurs, they don't roar, they aren't covered in scales etc.\n\n" +
         "You may have heard people mentioning this term 'cladistics' to help support this delusion. Basically it's like 'ok, dinosaurs and birds share a common ancestor thus birds are dinosaurs`.\n\n" +

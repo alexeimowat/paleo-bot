@@ -1,8 +1,8 @@
 import { Message } from 'discord.js'
-import type { KeywordHandler } from '../types/Handler'
-import { promptGemini } from '../composables/gemini'
-import { getRandomIndex } from '../utils/array'
-import { DIET_TYPE, PREHISTORIC_PERIODS, SPECIES_LOCOMOTION } from '../constants/dinosaurData'
+import type { KeywordHandler } from '../../types/Handler'
+import { promptGemini } from '../../composables/gemini'
+import { getRandomIndex } from '../../utils/array'
+import { DIET_TYPE, PREHISTORIC_PERIODS, SPECIES_LOCOMOTION } from '../../constants/dinosaurData'
 
 const buildPrompt = (): string => {
     const randomPeriod = PREHISTORIC_PERIODS[getRandomIndex(0, PREHISTORIC_PERIODS.length)]
