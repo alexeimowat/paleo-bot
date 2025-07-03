@@ -1,6 +1,7 @@
 import { Client, Events, GatewayIntentBits, Message } from 'discord.js'
 import { birdDinosaurFactHandler } from './features/birdsAreNotDinosaurs'
 import type { KeywordHandler } from './types/Handler'
+import { dinosaurFactHandler } from './features/dinosaurFact'
 
 const client = new Client({
     intents: [
@@ -10,7 +11,7 @@ const client = new Client({
     ]
 })
 
-const handlers: KeywordHandler[] = [birdDinosaurFactHandler]
+const handlers: KeywordHandler[] = [birdDinosaurFactHandler, dinosaurFactHandler]
 
 client.once(Events.ClientReady, async (readyClient) => {
     console.log("Client ready!")
