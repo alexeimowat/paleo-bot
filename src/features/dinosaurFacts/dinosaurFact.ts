@@ -13,9 +13,13 @@ const buildPrompt = (): string => {
 }
 
 const dinosaurFact = async (message: Message): Promise<void> => {
-    const geminiResponse = await promptGemini(buildPrompt());
+    try {
+        const geminiResponse = await promptGemini(buildPrompt());
 
-    await message.reply(geminiResponse)
+        await message.reply(geminiResponse)
+    } catch (error) {
+        await message.reply("Sorry, I'm having difficulties getting a fact for you, please try again!")
+    }
 }
 
 export const dinosaurFactHandler: KeywordHandler = {
